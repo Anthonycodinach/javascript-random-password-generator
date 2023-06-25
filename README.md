@@ -13,7 +13,7 @@ When a user clicks the button to generate a password they are presented with a s
 I authored all the code inside the JavaScript file, I was provided the CSS & HTML code from my proffessor. I did recive outside guidence from a TA during the class office hours but no code within JavaScript was outright authored by anyone outside of myself.
 
 ## Screenshot
-I have not figured out how to add an image to the README file yet, working on that!
+<img width="2240" alt="Screenshot 2023-06-25 at 11 05 53 AM" src="https://github.com/Anthonycodinach/javascript-random-password-generator/assets/112427299/b226f328-e8a4-4df0-819d-cd2f650b686e">
 
 ## Deployed Link
 https://anthonycodinach.github.io/javascript-random-password-generator/
