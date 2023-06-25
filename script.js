@@ -35,6 +35,7 @@ function generatePassword() {
   var passwordLength = numberOfCharacters
 
   // Based on the user's answers, create an array of possible characters to choose from.
+ 
   if (includeSpecialCharacters) {
    options = options.concat(pwdCharacter)
   }
@@ -53,16 +54,21 @@ function generatePassword() {
     generatedPassword+=getRandomValueFromArray(options);
   }
 
-  return generatedPassword;
+  if (generatedPassword.length < 8) {
+    confirm("Password character length must be between 8 - 128, try again")
+  } else if (generatedPassword.length > 128) {
+    confirm("Password character length must be between 8 - 128, try again")
+  } else 
+  return generatedPassword; 
 }
 
 // Write password to the #password input
 function writePassword() {
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button
